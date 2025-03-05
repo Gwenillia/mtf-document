@@ -1,0 +1,78 @@
+.language-selector {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid var(--sidebar-border);
+    margin-bottom: 15px;
+}
+
+.language-selector .btn-group {
+    display: flex;
+    width: 100%;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.language-selector .btn {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-width: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.language-selector .flag-icon {
+    font-size: 1.2rem;
+    margin-right: 4px;
+}
+
+/* Active state styling */
+.language-selector .btn-primary {
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.language-selector .btn-outline-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 123, 255, 0.1);
+}
+
+/* Dark mode specific styles */
+.dark-mode .language-selector {
+    border-top-color: var(--sidebar-border);
+}
+
+.dark-mode .language-selector .btn-primary {
+    background-color: var(--btn-primary-color);
+    border-color: var(--btn-primary-color);
+    color: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(102, 179, 255, 0.3);
+}
+
+.dark-mode .language-selector .btn-outline-primary {
+    color: var(--btn-primary-color);
+    border-color: var(--btn-primary-color);
+}
+
+.dark-mode .language-selector .btn-outline-primary:hover {
+    background-color: var(--btn-primary-color);
+    border-color: var(--btn-primary-color);
+    color: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(102, 179, 255, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .language-selector .btn {
+        padding: 6px 8px;
+        font-size: 0.85rem;
+    }
+    
+    .language-selector .flag-icon {
+        font-size: 1.1rem;
+    }
+}
